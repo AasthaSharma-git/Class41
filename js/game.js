@@ -93,6 +93,7 @@ class Game{
            
        }
       }
+      if(passedFinish===false){
       
      if(keyIsDown(UP_ARROW)){
          player.distance=player.distance+10;
@@ -113,10 +114,12 @@ class Game{
       player.update();
          
         }
+         
+      }
         
         
-    if(player.distance>3480){
-           //gameState=2;
+    if(player.distance>displayHeight*5-80){
+          passedFinish=true;
         }
 
 
