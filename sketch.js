@@ -13,7 +13,7 @@ var x,y;
 y=0;
 var car1Img,car2Img,car3Img,car4Img,trackImg;
 var space;
-
+var passedFinish=false;
 
 function preload(){
    car1Img=loadImage('images/car1.png');
